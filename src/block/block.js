@@ -11,4 +11,6 @@ import './style.scss';
 
 //  Import JS.
 import './flip-cards-parent-block.js';
-import './flip-cards-child-block.js';
+import './flip-card.js';
+import './flip-card-front.js';
+import './flip-card-back.js';

@@ -4,8 +4,11 @@ import { InnerBlocks } from '@wordpress/block-editor';
 
 const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
-const ALLOWED_BLOCKS = [ 'cgb/flip-card' ];
-
+const ALLOWED_BLOCKS = [ 'cgb/front-card', 'cgb/back-card' ];
+const TEMPLATE = [
+	[ 'cgb/front-card', { placeholder: 'Front' } ],
+	[ 'cgb/back-card', { placeholder: 'Back' } ],
+];
 /**
  * Register: Flip Cards Gutenberg Block.
  *
@@ -19,11 +22,12 @@ const ALLOWED_BLOCKS = [ 'cgb/flip-card' ];
  * @return {?WPBlock}          The block, if it has been successfully
  *                             registered; otherwise `undefined`.
  */
-registerBlockType( 'cgb/block-flip-cards', {
+registerBlockType( 'cgb/flip-card', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
 	title: __( 'Flip Cards Block' ), // Block title.
 	icon: 'update', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
-	category: 'layout widgets', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+    parent: [ 'cgb/block-flip-cards' ],
+    category: 'layout widgets', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
 		__( 'flip' ),
 		__( 'card' ),
@@ -47,6 +51,8 @@ registerBlockType( 'cgb/block-flip-cards', {
 				<h2>Flip Cards</h2>
 				<InnerBlocks
 					allowedBlocks={ ALLOWED_BLOCKS }
+                    template={ TEMPLATE }
+                    templateLock="all"
 				/>
 			</div>
 		);
