@@ -44,7 +44,7 @@ registerBlockType( 'cgb/block-flip-cards', {
 		// Creates a <p class='wp-block-cgb-block-flip-cards'></p>.
 		return (
 			<div className={ props.className }>
-				<h2>Flip Cards</h2>
+				<h2>Flip Cards Block</h2>
 				<InnerBlocks
 					allowedBlocks={ ALLOWED_BLOCKS }
 				/>

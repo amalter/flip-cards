@@ -24,7 +24,7 @@ const TEMPLATE = [
  */
 registerBlockType( 'cgb/flip-card', {
 	// Block name. Block names must be string that contains a namespace prefix. Example: my-plugin/my-custom-block.
-	title: __( 'Flip Cards Block' ), // Block title.
+	title: __( 'Flip Card' ), // Block title.
 	icon: 'update', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
     parent: [ 'cgb/block-flip-cards' ],
     category: 'layout widgets', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
@@ -48,7 +48,7 @@ registerBlockType( 'cgb/flip-card', {
 		// Creates a <p class='wp-block-cgb-block-flip-cards'></p>.
 		return (
 			<div className={ props.className }>
-				<h2>Flip Cards</h2>
+				<h3>Card</h3>
 				<InnerBlocks
 					allowedBlocks={ ALLOWED_BLOCKS }
                     template={ TEMPLATE }

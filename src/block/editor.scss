@@ -5,11 +5,52 @@
  * which makes it higher in priority.
  */
 
+// Typography
+ .wp-block-cgb-block-flip-cards  {
+  h1, h2,h3,h4,h5,h6 {
+    margin: .5rem !important;
+    font-weight: bold !important;
+  }
+  h2 {
+    font-size: 20px !important;
+  }
+  h3 {
+    font-size: 18px !important;
+  }
+  h4, h5, h6 {
+    font-size: 16px !important;
+  }
+ }
+
+//Layout
 .wp-block-cgb-block-flip-cards  {
-  background: $green;
+  background: $dark-gray;
   border: 0.2rem solid $black;
-  color: $black;
+  color: $white;
   margin: 0 auto;
   max-width: 740px;
-  padding: 2rem;
-}
+  padding: 0;
+
+  .wp-block-cgb-flip-card{
+    background: $med-gray;
+    color: $black;
+    margin: 0 auto;
+    max-width: 740px;
+    padding: .5rem;
+
+    .wp-block-cgb-front-card,
+    .wp-block-cgb-back-card{
+      background: $light-gray;
+      border-radius: 5px;
+      color: $black;
+      margin: 0 auto;
+      max-width: 740px;
+      padding: .5rem;
+
+    }//wp-block-cgb-front-card
+
+  }//wp-block-cgb-flip-card
+
+}//.wp-block-cgb-block-flip-cards
+
+

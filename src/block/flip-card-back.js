@@ -35,7 +35,7 @@ registerBlockType( 'cgb/back-card', {
 	edit: ( props ) => {
 		return (
 			<div className={ props.className }>
-				<h2>Back Content</h2>
+				<h4>Back side</h4>
 				<InnerBlocks
                     allowedBlocks={ ALLOWED_BLOCKS }
                     template={ TEMPLATE }

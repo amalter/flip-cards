@@ -37,7 +37,7 @@ registerBlockType( 'cgb/front-card', {
 	edit: ( props ) => {
 		return (
 			<div className={ props.className }>
-				<h2>Front Content</h2>
+				<h4>Front side</h4>
 				<InnerBlocks
 					allowedBlocks={ ALLOWED_BLOCKS }
 					template={ TEMPLATE }
