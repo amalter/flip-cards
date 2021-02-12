@@ -4,10 +4,9 @@ const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
 const ALLOWED_BLOCKS = [ 'core/image', 'core/heading', 'core/paragraph' ];
 const TEMPLATE = [
-	[ 'core/image' , {} ],
-	[ 'core/heading', { placeholder: 'Card Title', level: '3' } ],
-	[ 'core/heading', { placeholder: 'Card Title', level: 3 } ],
-	[ 'core/paragraph', { placeholder: 'Summary (optional)' } ]
+	[ 'core/image' , {align: 'center'} ],
+	[ 'core/heading', { placeholder: 'Card title', level: 3, textAlign: 'center' } ],
+	[ 'core/paragraph', { placeholder: 'Summary text (optional)', align: 'center' } ]
 ];
 
 /**********************************************************
