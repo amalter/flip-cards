@@ -29,12 +29,15 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 function flip_cards_cgb_block_assets() { // phpcs:ignore
 	// Register block styles for both frontend + backend.
-	wp_register_style(
-		'flip_cards-cgb-style-css', // Handle.
-		plugins_url( 'dist/blocks.style.build.css', dirname( __FILE__ ) ), // Block style CSS.
-		is_admin() ? array( 'wp-editor' ) : null, // Dependency to include the CSS after it.
-		null // filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.style.build.css' ) // Version: File modification time.
-	);
+	if( !is_admin() ) {
+		wp_register_style(
+			'flip_cards-cgb-style-css', // Handle.
+			plugins_url( 'dist/blocks.style.build.css', dirname( __FILE__ ) ), // Block style CSS.
+			is_admin() ? array( 'wp-editor' ) : null, // Dependency to include the CSS after it.
+			null // filemtime( plugin_dir_path( __DIR__ ) . 'dist/blocks.style.build.css' ) // Version: File modification time.
+		);
+	}
+	
 
 	// Register block editor script for backend.
 	wp_register_script(
