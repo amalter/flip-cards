@@ -71,7 +71,7 @@ registerBlockType( 'cgb/flip-card', {
 	 */
 	save: ( props ) => {
 		return (
-			<div className={ props.className }>
+			<div className={ props.className } tabindex="0">
 				<InnerBlocks.Content />
 			</div>
 		);

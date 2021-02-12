@@ -64,6 +64,8 @@ function flip_cards_cgb_block_assets() { // phpcs:ignore
 			'pluginDirPath' => plugin_dir_path( __DIR__ ),
 			'pluginDirUrl'  => plugin_dir_url( __DIR__ ),
 			// Add more data here that you want to access from `cgbGlobal` object.
+			'flipFrontSvg'  => plugins_url( '../assets/img/flip_front.svg', __FILE__ ),
+			'flipBackSvg'  => plugins_url( '../assets/img/flip_back.svg', __FILE__ ),
 		]
 	);
 

@@ -59,8 +59,12 @@ registerBlockType( 'cgb/front-card', {
 	save: ( props ) => {
 
 		return (
-			<div className="flip-card_front">
+			<div className="flip-card_side flip-card_front">
 					<InnerBlocks.Content />
+					<div className="flip-card_side-btn flip-card_front-btn">
+						<img src={cgbGlobal.flipFrontSvg}></img>
+                		<div>Flip</div>
+					</div>
 			</div>
 		);
 	},
