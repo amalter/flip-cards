@@ -6,6 +6,7 @@ const ALLOWED_BLOCKS = [ 'core/image', 'core/heading', 'core/paragraph' ];
 const TEMPLATE = [
 	[ 'core/image' , {} ],
 	[ 'core/heading', { placeholder: 'Card Title', level: '3' } ],
+	[ 'core/heading', { placeholder: 'Card Title', level: 3 } ],
 	[ 'core/paragraph', { placeholder: 'Summary (optional)' } ]
 ];
 
