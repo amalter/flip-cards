@@ -27,7 +27,7 @@ registerBlockType( 'cgb/flip-card', {
 	title: __( 'Flip Card' ), // Block title.
 	icon: 'update', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
     parent: [ 'cgb/block-flip-cards' ],
-    category: 'layout widgets', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+    category: 'layout', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
 		__( 'flip' ),
 		__( 'card' ),

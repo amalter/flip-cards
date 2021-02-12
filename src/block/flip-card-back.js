@@ -15,7 +15,7 @@ registerBlockType( 'cgb/back-card', {
 	title: __( 'Back Side' ), // Block title.
 	icon: 'welcome-add-page', // Block icon from Dashicons → https://developer.wordpress.org/resource/dashicons/.
 	parent: [ 'cgb/flip-card' ],
-	category: 'layout widgets', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
+	category: 'layout', // Block category — Group blocks together based on common traits E.g. common, formatting, layout widgets, embed.
 	keywords: [
 		__( 'back' ),
         __( 'flip' ),
