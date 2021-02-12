@@ -4,9 +4,9 @@ const { __ } = wp.i18n; // Import __() from wp.i18n
 const { registerBlockType } = wp.blocks; // Import registerBlockType() from wp.blocks
 const ALLOWED_BLOCKS = [ 'core/image', 'core/heading', 'core/paragraph' ];
 const TEMPLATE = [
-	[ 'core/image' ],
-    [ 'core/heading', { placeholder: 'Card Title' } ],
-	[ 'core/paragraph', { placeholder: 'Summary' } ]
+	[ 'core/image' , {} ],
+	[ 'core/heading', { placeholder: 'Card Title', level: '3' } ],
+	[ 'core/paragraph', { placeholder: 'Summary (optional)' } ]
 ];
 
 /**********************************************************
